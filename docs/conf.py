@@ -9,10 +9,10 @@
 from pathlib import Path
 import os
 import sys
-#import django
+import django
 sys.path.insert(0, os.path.abspath('..'))
 os.environ['DJANGO_SETTINGS_MODULE'] = 'emailapp.settings'
-#django.setup()
+django.setup()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
